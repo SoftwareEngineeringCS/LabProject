@@ -26,21 +26,52 @@ namespace QuizSystem
 
         private void cmdLogin(object sender, EventArgs e)
         {
-            if(txtName.Text == "admin")
+            //if(txtName.Text == "admin")
+            //{
+            //    //teacher
+            //    ManageExam m = new ManageExam();
+            //    this.Hide();
+            //    m.Show();
+            //}
+            //else if(txtName.Text=="student")
+            //{
+            //    //student
+            //    StudentExamStatus s = new StudentExamStatus();
+            //    this.Hide();
+            //    s.Show();
+            //}
+            bool isfound = false;
+            foreach (UserClass u in ListClass.mylist)
             {
-                //teacher
+                if (txtName.Text == u.Username && txtPassword.Text == u.Password && u.Role==txtRole.Text)
+                {
+                    isfound = true;
+                    MyUtil.loginuser = u;
+                }
+            }
+            if (isfound && txtRole.Text == "Teacher")
+            {
+                MessageBox.Show("Login successfully");
+                txtName.Text = "";
+                txtPassword.Text = "";
                 ManageExam m = new ManageExam();
                 this.Hide();
                 m.Show();
             }
-            else if(txtName.Text=="student")
+            else if(isfound)
             {
-                //student
+                MessageBox.Show("Login successfully");
+                txtName.Text = "";
+                txtPassword.Text = "";
                 StudentExamStatus s = new StudentExamStatus();
                 this.Hide();
                 s.Show();
+
             }
-            
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
         }
 
         private void cmdSignup(object sender, EventArgs e)

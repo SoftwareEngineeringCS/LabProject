@@ -39,7 +39,8 @@
             this.txtCNIC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.chkTeacher = new System.Windows.Forms.CheckBox();
+            this.txtRole = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -70,7 +71,7 @@
             // 
             this.Login.BackColor = System.Drawing.Color.Silver;
             this.Login.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login.Location = new System.Drawing.Point(315, 251);
+            this.Login.Location = new System.Drawing.Point(315, 275);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(71, 44);
             this.Login.TabIndex = 16;
@@ -111,7 +112,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(136, 220);
+            this.label4.Location = new System.Drawing.Point(136, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 16);
             this.label4.TabIndex = 19;
@@ -138,20 +139,35 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(136, 260);
+            this.label6.Location = new System.Drawing.Point(137, 248);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 16);
+            this.label6.Size = new System.Drawing.Size(37, 16);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Are You Teacher";
+            this.label6.Text = "Role";
             // 
-            // chkTeacher
+            // txtRole
             // 
-            this.chkTeacher.AutoSize = true;
-            this.chkTeacher.Location = new System.Drawing.Point(257, 262);
-            this.chkTeacher.Name = "chkTeacher";
-            this.chkTeacher.Size = new System.Drawing.Size(15, 14);
-            this.chkTeacher.TabIndex = 24;
-            this.chkTeacher.UseVisualStyleBackColor = true;
+            this.txtRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtRole.FormattingEnabled = true;
+            this.txtRole.Items.AddRange(new object[] {
+            "Teacher",
+            "Student"});
+            this.txtRole.Location = new System.Drawing.Point(222, 246);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.Size = new System.Drawing.Size(164, 21);
+            this.txtRole.TabIndex = 24;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(222, 275);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 44);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.cmdLogin);
             // 
             // ManageRegistration
             // 
@@ -159,7 +175,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(502, 331);
-            this.Controls.Add(this.chkTeacher);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtRole);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtCNIC);
             this.Controls.Add(this.label5);
@@ -191,6 +208,7 @@
         private System.Windows.Forms.TextBox txtCNIC;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox chkTeacher;
+        private System.Windows.Forms.ComboBox txtRole;
+        private System.Windows.Forms.Button button1;
     }
 }

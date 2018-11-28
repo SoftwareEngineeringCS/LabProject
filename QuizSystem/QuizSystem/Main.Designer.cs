@@ -36,13 +36,15 @@
             this.Login = new System.Windows.Forms.Button();
             this.SignUp = new System.Windows.Forms.Button();
             this.linkforget = new System.Windows.Forms.LinkLabel();
+            this.txtRole = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(111, 172);
+            this.label1.Location = new System.Drawing.Point(111, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 0;
@@ -50,14 +52,14 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(197, 172);
+            this.txtName.Location = new System.Drawing.Point(197, 160);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(164, 20);
             this.txtName.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(197, 198);
+            this.txtPassword.Location = new System.Drawing.Point(197, 186);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 20);
             this.txtPassword.TabIndex = 3;
@@ -78,7 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 198);
+            this.label2.Location = new System.Drawing.Point(111, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 6;
@@ -120,12 +122,36 @@
             this.linkforget.Text = "Forget Password";
             this.linkforget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkForgetPass);
             // 
+            // txtRole
+            // 
+            this.txtRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtRole.FormattingEnabled = true;
+            this.txtRole.Items.AddRange(new object[] {
+            "Teacher",
+            "Student"});
+            this.txtRole.Location = new System.Drawing.Point(197, 212);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.Size = new System.Drawing.Size(164, 21);
+            this.txtRole.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(114, 216);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 16);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Role";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(478, 365);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtRole);
             this.Controls.Add(this.linkforget);
             this.Controls.Add(this.SignUp);
             this.Controls.Add(this.Login);
@@ -152,6 +178,8 @@
         private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Button SignUp;
         private System.Windows.Forms.LinkLabel linkforget;
+        private System.Windows.Forms.ComboBox txtRole;
+        private System.Windows.Forms.Label label6;
     }
 }
 
