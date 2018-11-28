@@ -41,11 +41,11 @@
             this.Login = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textOption3 = new System.Windows.Forms.TextBox();
+            this.txtOption3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textOption4 = new System.Windows.Forms.TextBox();
+            this.txtOption4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textAnswer = new System.Windows.Forms.TextBox();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -169,12 +169,12 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Quiz System";
             // 
-            // textOption3
+            // txtOption3
             // 
-            this.textOption3.Location = new System.Drawing.Point(201, 228);
-            this.textOption3.Name = "textOption3";
-            this.textOption3.Size = new System.Drawing.Size(164, 20);
-            this.textOption3.TabIndex = 38;
+            this.txtOption3.Location = new System.Drawing.Point(201, 228);
+            this.txtOption3.Name = "txtOption3";
+            this.txtOption3.Size = new System.Drawing.Size(164, 20);
+            this.txtOption3.TabIndex = 38;
             // 
             // label6
             // 
@@ -186,12 +186,12 @@
             this.label6.TabIndex = 37;
             this.label6.Text = "Option3";
             // 
-            // textOption4
+            // txtOption4
             // 
-            this.textOption4.Location = new System.Drawing.Point(201, 254);
-            this.textOption4.Name = "textOption4";
-            this.textOption4.Size = new System.Drawing.Size(164, 20);
-            this.textOption4.TabIndex = 40;
+            this.txtOption4.Location = new System.Drawing.Point(201, 254);
+            this.txtOption4.Name = "txtOption4";
+            this.txtOption4.Size = new System.Drawing.Size(164, 20);
+            this.txtOption4.TabIndex = 40;
             // 
             // label7
             // 
@@ -203,12 +203,12 @@
             this.label7.TabIndex = 39;
             this.label7.Text = "Option4";
             // 
-            // textAnswer
+            // txtAnswer
             // 
-            this.textAnswer.Location = new System.Drawing.Point(201, 284);
-            this.textAnswer.Name = "textAnswer";
-            this.textAnswer.Size = new System.Drawing.Size(164, 20);
-            this.textAnswer.TabIndex = 42;
+            this.txtAnswer.Location = new System.Drawing.Point(201, 284);
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.Size = new System.Drawing.Size(164, 20);
+            this.txtAnswer.TabIndex = 42;
             // 
             // label8
             // 
@@ -239,11 +239,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(489, 377);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.textAnswer);
+            this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textOption4);
+            this.Controls.Add(this.txtOption4);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textOption3);
+            this.Controls.Add(this.txtOption3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtOption1);
             this.Controls.Add(this.txtSubject);
@@ -279,11 +279,11 @@
         private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textOption3;
+        private System.Windows.Forms.TextBox txtOption3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textOption4;
+        private System.Windows.Forms.TextBox txtOption4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textAnswer;
+        private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.ToolStripMenuItem examDetailsToolStripMenuItem;

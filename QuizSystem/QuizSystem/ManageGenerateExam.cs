@@ -19,7 +19,9 @@ namespace QuizSystem
 
         private void ManageGenerateExam_Load(object sender, EventArgs e)
         {
-
+            BindingSource s = new BindingSource();
+            s.DataSource = MyUtil.loginuser.questions;
+            dataGridView1.DataSource = s;
         }
 
         private void label6_Click(object sender, EventArgs e)

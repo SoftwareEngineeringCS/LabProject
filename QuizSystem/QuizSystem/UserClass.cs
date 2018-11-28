@@ -13,7 +13,7 @@ namespace QuizSystem
         private string cnic;
         private string contactNumber;
         private string role;
-        //public List<Mycontact> contacts = new List<Mycontact>();
+        public List<QuestionClass> questions = new List<QuestionClass>();
 
         public string Username
         {

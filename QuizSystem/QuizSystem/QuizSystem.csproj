@@ -94,6 +94,7 @@
     <Compile Include="MyUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionClass.cs" />
     <Compile Include="StudentExamStatus.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -54,7 +54,6 @@ namespace QuizSystem
             m.Show();
         }
 
-
         private void ManagePassword_Load(object sender, EventArgs e)
         {
 

@@ -19,6 +19,16 @@ namespace QuizSystem
 
         private void cmdAddQuestion(object sender, EventArgs e)
         {
+            QuestionClass q = new QuestionClass();
+            q.Subject = txtSubject.Text;
+            q.Question = txtQuestion.Text;
+            q.Option1 = txtOption1.Text;
+            q.Option2 = txtOption2.Text;
+            q.Option3 = txtOption3.Text;
+            q.Option4 = txtOption4.Text;
+            q.Answer = txtAnswer.Text;
+            UserClass current = MyUtil.loginuser;
+            current.questions.Add(q);
 
         }
 
